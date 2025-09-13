@@ -3,7 +3,11 @@
         <title>Online Voting System - Dashboard</title>
     </head>
     <body>
+        <button>Back</button>
+        <button>LogOut</button>
         <h1>Online Voting System</h1>
         <hr>
+        <div id="Profile"></div>
+         <div id="Group"></div>
     </body>
 </html>
