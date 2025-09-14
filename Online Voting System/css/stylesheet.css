@@ -11,6 +11,14 @@ body{
     font-family: cursive;
 }
 
+#headersection1{
+    padding: 5px;
+}
+
+#headersection1 h1{
+    font-family: cursive;
+}
+
 input{
     padding: 10px;
     border-radius: 5px;
@@ -28,3 +36,4 @@ input{
     background-color: #3498db;
     color: white;
 }
+
