@@ -92,11 +92,14 @@ if ($role && intval($user['role']) !== $role) {
 }
 */
 
-// Set session variables
-$_SESSION['user_id'] = $user['id'];
-$_SESSION['user_name'] = $user['name'];
-$_SESSION['user_mobile'] = $user['mobile'];
-$_SESSION['user_role'] = intval($user['role']);
+// Set full session array
+$_SESSION['userdata'] = $user;
+
+// Optional: load all groups (for dashboard)
+$groups = mysqli_query($connect, "SELECT * FROM users WHERE role=2");
+$groupsdata = mysqli_fetch_all($groups, MYSQLI_ASSOC);
+$_SESSION['groupsdata'] = $groupsdata;
+
 
 // Redirect user based on role (adjust paths as needed)
 if (intval($user['role']) === 2) {

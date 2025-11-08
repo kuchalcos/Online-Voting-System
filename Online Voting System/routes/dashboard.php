@@ -10,7 +10,9 @@
     </head>
     <body>
         <button>Back</button>
-        <button>LogOut</button>
+       
+        <button onclick="window.location.href='logout.php'">Logout</button>
+
         <h1>Online Voting System</h1>
         <hr>
         <div id="Profile"></div>
