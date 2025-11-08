@@ -1,11 +1,8 @@
 <?php
-
-$connect = mysqli_connect("localhost","root","","voting")or die("connection failed!");
-if($connect){
-    echo "Connected!";
+$connect = mysqli_connect("localhost", "root", "", "voting");
+if (!$connect) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-else{
-    echo "Not Connected!";
-}
-
+// do not echo anything here in production
 ?>
+
